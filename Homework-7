@@ -1,0 +1,11 @@
+1- SELECT title, rating FROM film
+   GROUP BY rating, title;
+2- SELECT replacement_cost, COUNT(title) FROM film
+   GROUP BY replacement_cost
+   HAVING COUNT(title) > 50;
+3- 1 -> 326
+   2 -> 273
+4- SELECT country_id, COUNT(*) FROM city
+GROUP BY country_id
+ORDER BY count DESC
+LIMIT 1;
